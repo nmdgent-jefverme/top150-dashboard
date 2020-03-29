@@ -1,0 +1,19 @@
+body {
+	background-image: url('./images/light.gif');
+	background-color: deeppink !important;
+}
+
+.App {
+	display: flex;
+	flex-direction: row;
+}
+
+.spotify__container, .image__container {
+	height: 45vh;
+	width: 35vw;
+}
+
+.game {
+	width: 100vw;
+	height: 100vh;
+}

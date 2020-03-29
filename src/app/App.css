@@ -8,12 +8,41 @@ body {
 	flex-direction: row;
 }
 
-.spotify__container, .image__container {
-	height: 45vh;
-	width: 35vw;
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.game {
-	width: 100vw;
-	height: 100vh;
+.spotify__container, .image__container {
+	margin-top: 10px;
+	height: 45vh;
+	/* width: 30vw; */
+}
+
+.spotify__container {
+	/* margin-left: 6px; */
+	width: 30vw;
+}
+
+.card-img-top {
+	width: 10%;
+}
+
+.card__container, .countdown {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.card__container {
+	display: none;
+}
+
+.countdown {
+	margin-top: 38vh;
+}
+
+h1 {
+	background-color: green;
 }

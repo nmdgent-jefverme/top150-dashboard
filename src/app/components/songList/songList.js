@@ -4,7 +4,7 @@ import Song from '../song/song';
 import { songs } from '../../config'
 
 const SongList = () => {
-    const [curSong, setCurSong] = useState(150);
+    const [curSong, setCurSong] = useState(140);
     // console.log(songs);
 
     const displayPrevious = (ev) => {
@@ -14,7 +14,7 @@ const SongList = () => {
 
     const displayNext = (ev) => {
         ev.preventDefault();
-        setCurSong(curSong - 1);
+        if(curSong >= 132) setCurSong(curSong - 1);
     }
     return(
         <div className="card__container">

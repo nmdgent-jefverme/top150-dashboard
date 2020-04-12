@@ -5,7 +5,7 @@ import Song from '../song/song';
 import { songs } from '../../config'
 
 const SongList = () => {
-    const [curSong, setCurSong] = useState(150);
+    const [curSong, setCurSong] = useState(130);
     // console.log(songs);
     const dragBlock = document.getElementById('root');
     const hammertime = new Hammer(dragBlock);
@@ -21,7 +21,7 @@ const SongList = () => {
 
     const displayNext = (ev) => {
         ev.preventDefault();
-        if(curSong >= 131) setCurSong(curSong - 1);
+        if(curSong >= 122) setCurSong(curSong - 1);
     }
 
     return(

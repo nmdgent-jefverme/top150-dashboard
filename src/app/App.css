@@ -28,17 +28,40 @@ body {
 .card__container, .countdown {
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
-}
-
-.card__container {
-	/* display: none; */
 }
 
 .countdown {
 	margin-top: 38vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 h1 {
 	background-color: green;
 }
+
+.card {
+	width: 50%;
+	margin-top: 10px;
+}
+
+.card img {
+	width: 50%;
+	margin: 0 auto;
+}
+.card__container {
+	/* flex-direction: column; */
+	align-items: center;
+  }
+
+@media screen and (max-width: 600px) {
+	.card  {
+		margin-top: 0;
+		width: 80%;
+	}
+	.card__container {
+		flex-direction: column;
+	}
+  }
